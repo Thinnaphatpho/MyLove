@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I LOVE LUI - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="home-page">
+  <!-- Header -->
+  <header class="header">
+    <h1>LOVEUNATEELAKK</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="series.html">Series</a>
+      <a href="movies.html">Movies</a>
+      <a href="mylove.html">My Love</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" 
+           style="position: relative; height: 65vh; overflow: hidden;">
+    
+    <!-- วิดีโอจะแสดงเต็มพื้นที่ Hero -->
+    <video 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+    >
+      <!-- เปลี่ยน path ตรง src ให้ตรงกับที่เก็บไฟล์จริง -->
+      <source src="pic/760640741.308355.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay โปร่งใส -->
+    <div class="overlay" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 2;">
+    </div>
+
+    <!-- Content ด้านหน้าสุด -->
+    <div class="content"
+    style="
+      position: relative; 
+      z-index: 2; 
+      top: 65%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      text-align: center; 
+    "
+>
+<div 
+  class="content"
+  style="
+    position: relative;
+    z-index: 3;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 60px; /* เพิ่มระยะห่างด้านบน */
+  "
+>
+  <h2>My Love So Cute&lt;3</h2>
+  <h3>My love is the reason I smile every day and is with me through every moment of my life.</h3>
+  <a 
+    href="series.html" 
+    style="
+      display: inline-block;
+      background-color: #e50914; 
+      color: white; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      font-weight: bold; 
+      border-radius: 20px; 
+      text-decoration: none; 
+      cursor: pointer;
+      margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    "
+  >
+    Watch Now
+  </a>
+</div>
+
+
+  </section>
+</body>
+</html>
